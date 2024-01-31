@@ -1,0 +1,323 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+/* start box  */
+.d-grid{
+  display: grid;
+}
+.gap-20{
+  gap: 20px;
+}
+.d-flex{
+  display: flex;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.space-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.d-block{
+  display: block;
+}
+/* start box  */
+/* ---------------------------------------- */
+/* start padding + margin  */
+.p-10{
+  padding: 10px;
+}
+.p-15{
+  padding: 15px;
+}
+.p-20{
+  padding: 20px;
+}
+.pt-10{
+  padding-top: 10px;
+}
+.pt-15{
+  padding-top: 15px;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pb-10{
+  padding-bottom: 10px;
+}
+.pb-15{
+  padding-bottom: 15px;
+}
+.pb-20{
+  padding-bottom: 20px;
+}
+.pl-15{
+  padding-left: 15px;
+}
+.m-0{
+  margin: 0;
+}
+.m-20{
+  margin: 20px;
+}
+.mr-15{
+  margin: 15px;
+}
+.mt-0{
+  margin-top: 0;
+}
+.mt-5{
+  margin-top: 5px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-25{
+  margin-top: 25px;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mb-5{
+  margin-bottom: 5px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+/* start padding + margin  */
+/* ---------------------------------------- */
+/* start color  */
+.bg-white{
+  background-color: white;
+}
+.bg-eee{
+  background-color: #eee;
+}
+.bg-blue{
+  background-color: var(--blue-color);
+}
+.bg-orange{
+  background-color: var(--orange-color);
+}
+.bg-red{
+  background-color: var(--red-color);
+}
+.bg-green{
+  background-color: var(--green-color);
+}
+.c-black{
+  color: black;
+}
+.c-grey{
+  color: var(--grey-color);
+}
+.c-blue{
+  color: var(--blue-color);
+}
+.c-orange{
+  color: var(--orange-color);
+}
+.c-green{
+  color: var(--green-color);
+}
+.c-red{
+  color: var(--red-color);
+}
+.c-white{
+  color: white;
+}
+
+/* start color  */
+/* ---------------------------------------- */
+/* position */
+.p-relative{
+  position: relative;
+}
+.p-absolute{
+  position: absolute;
+}
+/* position */
+/* ---------------------------------------- */
+/* start fonts  */
+.fw-bold{
+  font-weight: bold;
+}
+.txt-c{
+  text-align: center;
+}
+.fs-13{
+  font-size: 13px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-15{
+  font-size: 15px;
+}
+.fs-25{
+  font-size: 25px;
+}
+/* start fonts  */
+/* ---------------------------------------- */
+/* start border  */
+.b-none{
+  border: none;
+}
+.b-ccc{
+  border: 1px solid #ccc;
+}
+.b-eee{
+  border: 1px solid #eee;
+}
+.rad-6{
+  border-radius: 6px;
+}
+.rad-10{
+  border-radius: 10px;
+}
+.rad-half{
+  border-radius: 50%;
+}
+/* start border  */
+/* ---------------------------------------- */
+/* dimansion */
+.w-full{
+  width: 100%;
+}
+.w-fit{
+  width: fit-content;
+}
+.w-100{
+  width: 100px;
+}
+.h-full{
+  height: 100%;
+}
+.h-100{
+  height: 100px;
+}
+/* dimansion */
+/* ---------------------------------------- */
+/* media quare */
+  @media(max-width: 767px){
+  .hide-mobile{
+    display: none;
+  }
+}
+  @media(max-width: 767px){
+  .txt-c-mobile{
+    text-align: center;
+  }
+}
+  @media(max-width: 767px){
+  .block-mobile{
+    display: block;
+  }
+}
+
+/* media quare */
+/* ---------------------------------------- */
+/* componan */
+.center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.between-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+/* toggle checkbox */
+.toggle-checkbox{
+  -webkit-appearance: none;
+  display: none;
+  appearance: none;
+}
+.toggle-switch{
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-switch:before{
+  content: "\f00d";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+  left: 50px;
+  content: "\f00c";
+  color: var(--blue-color);
+}
+/* toggle checkbox */
+/* componan */
+/* ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
